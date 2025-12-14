@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mathak store - cookie shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- header section -->
+    <header class="main-header">
+        <div class="container">
+            <!-- logo we made -->
+            <div class="logo">
+                <img src="logo.jpg" alt="mathak store logo" id="logo">
+                <h1>mathak store</h1>
+            </div>
+
+            <!-- navigation -->
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#gallery">cookies</a></li>
+                    <li><a href="#custom">custom</a></li>
+                    <li>
+                        <a href="#cart" id="cartlink">
+                            cart <span class="cart-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- mobile menu button -->
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- hero section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h2>mathak cookies<br>for the best mathak</h2>
+            <p>homemade cookies with love</p>
+            <a href="#gallery" class="btn">see cookies</a>
+        </div>
+    </section>
+
+    <!-- products section -->
+    <section class="gallery-section" id="gallery">
+        <div class="container">
+            <h2 class="section-title">our cookies</h2>
+            
+            <!-- filter buttons -->
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">all</button>
+                <button class="filter-btn" data-filter="cookies">cookies</button>
+                <button class="filter-btn" data-filter="cakes">cakes</button>
+                <button class="filter-btn" data-filter="boxes">boxes</button>
+            </div>
+
+            <!-- products -->
+            <div class="cookie-grid">
+                <div class="cookie-card" data-category="cookies" data-id="1">
+                    <img src="ookies.jpg" alt="chocolate cookies">
+                    <div class="cookie-info">
+                        <h3>chocolate cookies</h3>
+                        <p>soft with chocolate chips</p>
+                        <div class="cookie-meta">
+                            <span class="price">3 lyd</span>
+                            <button class="add-to-cart">add to cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cookie-card" data-category="cookies" data-id="2">
+                    <img src="red-velvet-cookies.jpg" alt="red velvet">
+                    <div class="cookie-info">
+                        <h3>red velvet cookies</h3>
+                        <p>soft red cookies</p>
+                        <div class="cookie-meta">
+                            <span class="price">4 lyd</span>
+                            <button class="add-to-cart">add to cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cookie-card" data-category="cakes" data-id="3">
+                    <img src="brownie-cake.jpg" alt="brownie cake">
+                    <div class="cookie-info">
+                        <h3>brownie cake</h3>
+                        <p>chocolate cake</p>
+                        <div class="cookie-meta">
+                            <span class="price">8 lyd</span>
+                            <button class="add-to-cart">add to cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cookie-card" data-category="cakes" data-id="4">
+                    <img src="cookies-cake.jpg" alt="cookies cake">
+                    <div class="cookie-info">
+                        <h3>cookies cake</h3>
+                        <p>cake for sharing</p>
+                        <div class="cookie-meta">
+                            <span class="price">7 lyd</span>
+                            <button class="add-to-cart">add to cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cookie-card" data-category="cakes" data-id="5">
+                    <img src="tiramisu.jpg" alt="tiramisu">
+                    <div class="cookie-info">
+                        <h3>tiramisu</h3>
+                        <p>coffee dessert</p>
+                        <div class="cookie-meta">
+                            <span class="price">6 lyd</span>
+                            <button class="add-to-cart">add to cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cookie-card" data-category="boxes" data-id="6">
+                    <img src="Cookie bites.PNG" alt="cookie bites">
+                    <div class="cookie-info">
+                        <h3>cookie bites</h3>
+                        <p>small cookies box</p>
+                        <div class="cookie-meta">
+                            <span class="price">15 lyd</span>
+                            <button class="add-to-cart">add to cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cookie-card" data-category="boxes" data-id="7">
+                    <img src="Brownies bites.PNG" alt="brownies bites">
+                    <div class="cookie-info">
+                        <h3>brownies bites</h3>
+                        <p>chocolate bites</p>
+                        <div class="cookie-meta">
+                            <span class="price">15 lyd</span>
+                            <button class="add-to-cart">add to cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cookie-card" data-category="boxes" data-id="8">
+                    <img src="brownie-and-cookie-bites.jpg" alt="mixed bites">
+                    <div class="cookie-info">
+                        <h3>mixed bites</h3>
+                        <p>cookies and brownies</p>
+                        <div class="cookie-meta">
+                            <span class="price">18 lyd</span>
+                            <button class="add-to-cart">add to cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cookie-card" data-category="boxes" data-id="9">
+                    <img src="Cup cookies.JPG" alt="cup cookies">
+                    <div class="cookie-info">
+                        <h3>cup cookies</h3>
+                        <p>cookies in cups</p>
+                        <div class="cookie-meta">
+                            <span class="price">16 lyd</span>
+                            <button class="add-to-cart">add to cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cookie-card" data-category="cakes" data-id="10">
+                    <img src="feuilletine cake.JPG" alt="feuilletine cake">
+                    <div class="cookie-info">
+                        <h3>feuilletine cake</h3>
+                        <p>crunchy cake</p>
+                        <div class="cookie-meta">
+                            <span class="price">16 lyd</span>
+                            <button class="add-to-cart">add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- custom order section-->
+    <section class="custom-order" id="custom">
+        <div class="container">
+            <h2 class="section-title">design your own cookie</h2>
+            
+            <div class="customizer-container">
+                
+                <div class="customizer-options">
+                    <h3>build your perfect cookie</h3>
+                    
+                    <!-- cookie base -->
+                    <div class="option-group">
+                        <h4>cookie base</h4>
+                        <div class="option-buttons">
+                            <button class="option-btn" data-option="base" data-value="chocolate">chocolate</button>
+                            <button class="option-btn active" data-option="base" data-value="vanilla">vanilla</button>
+                            <button class="option-btn" data-option="base" data-value="sugar">sugar</button>
+                        </div>
+                    </div>
+                    
+                    <!-- icing -->
+                    <div class="option-group">
+                        <h4>icing</h4>
+                        <div class="option-buttons">
+                            <button class="option-btn active" data-option="icing" data-value="vanilla">vanilla icing</button>
+                            <button class="option-btn" data-option="icing" data-value="chocolate">chocolate icing</button>
+                            <button class="option-btn" data-option="icing" data-value="none">no icing</button>
+                        </div>
+                    </div>
+                    
+                    <!-- toppings -->
+                    <div class="option-group">
+                        <h4>toppings</h4>
+                        <div class="option-buttons">
+                            <button class="option-btn" data-option="topping" data-value="sprinkles">sprinkles</button>
+                            <button class="option-btn active" data-option="topping" data-value="chips">chocolate chips</button>
+                            <button class="option-btn" data-option="topping" data-value="nuts">nuts</button>
+                            <button class="option-btn" data-option="topping" data-value="none">no toppings</button>
+                        </div>
+                    </div>
+                    
+                    <!-- custom message -->
+                    <div class="option-group">
+                        <h4>special message (optional)</h4>
+                        <input type="text" id="cookieMessage" placeholder="write a message on your cookie" maxlength="15">
+                    </div>
+                    
+                    <!-- summary and add button -->
+                    <div class="custom-summary">
+                        <h4>your custom cookie:</h4>
+                        <p id="cookieDescription">vanilla cookie with vanilla icing and chocolate chips</p>
+                        <p class="price">5.00 lyd</p>
+                        <button id="addCustomCookie" class="add-to-cart" style="width: 100%; padding: 12px;">
+                            <i class="fas fa-plus"></i> add custom cookie to cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- cart sidebar -->
+    <aside class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>your cart</h3>
+            <button class="close-cart">&times;</button>
+        </div>
+        <div class="cart-items">
+            <p class="empty-cart">cart is empty</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>total:</span>
+                <span class="total-price">0.00 lyd</span>
+            </div>
+            <button class="checkout-btn">checkout</button>
+        </div>
+    </aside>
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <!-- footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 mathak store. a project.</p>
+            
+        </div>
+    </footer>
+
+    <script src="web.js"></script>
+</body>
+</html>
